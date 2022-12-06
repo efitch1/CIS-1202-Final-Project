@@ -8,7 +8,7 @@ using namespace std;
 class ELG3A :public Blaster
 {
 private:
-
+	//private variables only for this blaster
 	bool nabooUnderwaterCapacitor;
 	bool grapplingHook;
 

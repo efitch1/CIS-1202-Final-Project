@@ -37,20 +37,21 @@ void E11::setIonizedshots(bool ionizedShots)
 }
 void E11::displayDescription()
 {
+	//conditional based on boolean
 	Blaster::displayDescription();
-	if (imperialScope = true)
+	if (this->imperialScope == true)
 	{
 		cout << "Fitted with an imperial scope." << endl;
 	}
-	else if (imperialScope= false)
+	else if (this->imperialScope == false)
 	{
 		cout << "Not fitted with an imperial scope." << endl;;
 	}
-	if (ionizedShots = true)
+	if (this->ionizedShots == true)
 	{
-		cout << "Fires ionized shots." << endl;
+		cout << "Fires ionized shots, it is more effective against droids." << endl;
 	}
-	else if (ionizedShots=false)
+	else if (this->ionizedShots ==false)
 	{
 		cout << "Fires standard imperial rounds." << endl;
 	}

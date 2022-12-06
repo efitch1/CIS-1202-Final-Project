@@ -15,7 +15,7 @@ ELG3A::ELG3A(string name, string Era, int year, double price, int damage, bool n
 	ELG3A::nabooUnderwaterCapacitor = nabooUnderwaterCapacitor;
 	ELG3A::grapplingHook = grapplingHook;
 }
-
+//getters
 bool ELG3A::getnabooUnderwaterCapacitor()
 {
 	return nabooUnderwaterCapacitor;
@@ -25,7 +25,7 @@ bool ELG3A::getgrapplingHook()
 {
 	return grapplingHook;
 }
-
+//setters
 void ELG3A::setnabooUnderwaterCapacitor(bool nabooUnderwaterCapacitor)
 {
 	this->nabooUnderwaterCapacitor = nabooUnderwaterCapacitor;
@@ -35,22 +35,24 @@ void ELG3A::setgrapplingHook(bool grapplingHook)
 {
 	this->grapplingHook = grapplingHook;
 }
+//conditional description based on boolean
 void ELG3A::displayDescription()
 {
+	
 	Blaster::displayDescription();
-	if (nabooUnderwaterCapacitor = true)
+	if (this->nabooUnderwaterCapacitor == true)
 	{
 		cout << "Fitted with a special Naboo underwater capacitor that allows firing underwater." << endl;
 	}
-	else if (nabooUnderwaterCapacitor = false)
+	else if (this->nabooUnderwaterCapacitor == false)
 	{
 		cout << "Not fitted with a special Naboo underwater capacitor that allows firing underwater." << endl;;
 	}
-	if (grapplingHook = true)
+	if (this->grapplingHook == true)
 	{
 		cout << "Fitted with a grappling hook, to allow a quick escape." << endl;
 	}
-	else if (grapplingHook = false)
+	else if (this->grapplingHook == false)
 	{
 		cout << "Not fitted with a grappling hook." << endl;
 	}

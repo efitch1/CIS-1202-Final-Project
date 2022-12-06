@@ -38,19 +38,19 @@ void A280::setantiSedimentBarrel(bool antiSedimentBarrel)
 void A280::displayDescription()
 {
 	Blaster::displayDescription();
-	if (rebellionScope = true)
+	if (this->rebellionScope == true)
 	{
 		cout << "Fitted with a rebellion scope that allows up to 5xs magnification." << endl;
 	}
-	else if (rebellionScope = false)
+	else if (this->rebellionScope == false)
 	{
 		cout << "Not fitted with a rebellion scope." << endl;;
 	}
-	if (antiSedimentBarrel = true)
+	if (this->antiSedimentBarrel == true)
 	{
 		cout << "Fitted with an anti-sediment barrel, to allow use in snow or rain." << endl;
 	}
-	else if (antiSedimentBarrel = false)
+	else if (this->antiSedimentBarrel == false)
 	{
 		cout << "Not fitted Fitted with an anti-sediment barrel, be cautious of rain or snow." << endl;
 	}
