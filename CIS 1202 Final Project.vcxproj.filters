@@ -27,6 +27,9 @@
     <ClCompile Include="ELG-3A.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="A280.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E11.h">

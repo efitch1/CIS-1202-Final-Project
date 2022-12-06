@@ -4,6 +4,7 @@
 using namespace std;
 Blaster::Blaster()
 {
+	//setting default values for blasters
 	Blaster::name = "";
 	Blaster::Era = "";
 	Blaster::year = 0;
@@ -19,6 +20,7 @@ Blaster::Blaster(string name,string Era, int year, double price, int damage)
 	this->price = price;
 	this->damage = damage;
 }
+//getters
 string Blaster::getName()
 {
 	return name;
@@ -43,7 +45,7 @@ int Blaster::getDamage()
 {
 	return damage;
 }
-
+//setters
 void Blaster::setName(string name)
 {
 	this->name = name;
@@ -68,6 +70,7 @@ void Blaster::setDamage(int damage)
 	this->damage = damage;
 }
 
+//All blasters display this
 void Blaster::displayDescription()
 {
 	cout << "Blaster Name: " << getName() << endl;

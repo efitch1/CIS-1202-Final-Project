@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="A280.cpp" />
     <ClCompile Include="Blaster.cpp" />
     <ClCompile Include="CIS 1202 Final Project.cpp" />
     <ClCompile Include="E11.cpp" />

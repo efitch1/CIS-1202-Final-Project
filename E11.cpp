@@ -12,8 +12,8 @@ E11::E11() : Blaster()
 
 E11::E11(string name,string Era, int year, double price, int damage, bool imperialScope, bool ionizedShots) : Blaster(name, Era, year, price, damage)
 {
-	imperialScope = imperialScope;
-	ionizedShots  = ionizedShots;
+	E11::imperialScope = imperialScope;
+	E11::ionizedShots  = ionizedShots;
 }
 
 bool E11::getImperialScope()
@@ -28,12 +28,12 @@ bool E11::getIonizedshots()
 
 void E11::setImperialScope(bool imperialScope)
 {
-	imperialScope = imperialScope;
+	this->imperialScope = imperialScope;
 }
 
 void E11::setIonizedshots(bool ionizedShots)
 {
-	ionizedShots = ionizedShots;
+	this->ionizedShots = ionizedShots;
 }
 void E11::displayDescription()
 {
